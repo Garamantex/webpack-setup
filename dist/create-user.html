@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container c-bg c-bg__gray-400 pt-5">
+        <div class="row">
+            <div class="col">
+                <div class="c-users">
+                    <p class="c-users__title">Formulario de creacion de usuario</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form action="">
+                    <fieldset>
+                        <legend>Crear usuario</legend>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="c-form c-form__input" id="name" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="c-form c-form__input" id="password" placeholder="Contraseña">
+                        </div>
+                        <div class="mb-3">
+                            <label for="perfil" class="form-label">Perfil</label>
+                            <select name="perfil" class="c-form c-form__dropdown" aria-label="Default select example">
+                                <option selected>Abre este menú</option>
+                                <option value="1">Vendedor</option>
+                                <option value="2">Administrador</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Valores maximos</legend>
+                        <div class="mb-3">
+                            <label for="maxMoney" class="form-label">Maximo caja</label>
+                            <input type="text" class="c-form c-form__input" id="maxMoney" name="maxMoney" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="maxSale" class="form-label">Maximo venta</label>
+                            <input type="text" class="c-form c-form__input" id="maxSale" name="maxSale" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="maxCash" class="form-label">Maximo gastos</label>
+                            <input type="text" class="c-form c-form__input" id="maxCash" name="maxCash" placeholder="">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Parametros del usuario</legend>
+                        <div class="mb-3">
+                            <label for="maxPays" class="form-label">Maximo cuotas</label>
+                            <input type="text" class="c-form c-form__input" id="maxPays" name="maxPays" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="maxLoan" class="form-label">Minimo interes</label>
+                            <input type="text" class="c-form c-form__input" id="maxPays" name="maxLoan" placeholder="">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Solicitar Token</legend>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input c-form__checkbox" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">Borrar ventas</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input c-form__checkbox" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">Modificar pagos</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Porcentajes de liquidacion</legend>
+                        <div class="mb-3">
+                            <label for="comition" class="form-label">Liquidacion porcentaje</label>
+                            <input type="text" class="c-form c-form__input" id="comition" name="comition" placeholder="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="defValue" class="form-label">Valor fijo</label>
+                            <input type="text" class="c-form c-form__input" id="maxPays" name="defValue" placeholder="">
+                        </div>
+                    </fieldset>
+                    <button class="c-btn c-btn-primary mb-4" type="submit">Crear Usuario</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
